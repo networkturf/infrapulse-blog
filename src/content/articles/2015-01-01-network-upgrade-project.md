@@ -1,8 +1,10 @@
 ---
-layout: post
 title: "Network Upgrade Project"
 date: 2015-01-01
 author: Kunal Vaidya
+excerpt: "My experience of completing a Network Upgrade Project, where we performed a complete rip and replace of the entire network infratructure in 2 weeks"
+category: "Engineering"
+readTime: "8 mins read"
 tags:
   - Network Upgrade
   - Cisco 
@@ -19,7 +21,7 @@ Long story short, we finalized Dell as the new vendor 🤦‍♂️ and worked w
 - 2 Cisco 6500 Core Switches(Active/Standby)
 - 6 Cisco 6500 Access Switches
 
-![Description of image](/assets/images/Cisco-switches.jpg)
+![Description of image](/src/assets/images/Cisco-switches.jpg)
 
 
 The 6500s carried all of our internal network traffic, including all kinds of servers, host PCs and VOIP phones. VOIP phones were connected to special POE line cards in the 6500 chassis. Evidently, each 6500 switch became a huge single point of failure, as a failure potentially took down a ton of critical production traffic. So, the single most important factor in the new network architecture had to be segregation.
@@ -30,7 +32,7 @@ The 6500s carried all of our internal network traffic, including all kinds of se
 - 6 Stacks of Dell N3048P 1G Campus Switches (about 10 switches per stack, total 60 switches)
 
 
-![Description of image](/assets/images/Dell-switches.jpg)
+![Description of image](/src/assets/images/Dell-switches.jpg)
 
 Finally, after 2 weeks of 14-16 hour days (including Christmas), we finished the project on the 31st of December (what a way to end the year!).  
 
